@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Exception Page";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>This page generates runtime exception!</p>
+
+@{
+    throw new Exception("This is a generated exception.", new Exception("This is an inner exception."));
+}
